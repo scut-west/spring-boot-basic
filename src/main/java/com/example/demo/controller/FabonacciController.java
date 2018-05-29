@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/fabonacci")
 public class FabonacciController {
-
     @RequestMapping(path="/{number}", method = RequestMethod.GET)
     public int getFabonacciResult(@PathVariable("number") int input) throws Exception {
         int result = Fabonacci.getResult(input);
